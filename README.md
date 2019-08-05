@@ -26,3 +26,10 @@
 <div align="center">
     <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/4.jpg" alt="4">
 </div>
+
+<br>
+
+<div align="center">
+  <h4> POWERED BY JEFREINK ORTUÑO </h4>
+  <p> jefreink@gmail.com </p>
+</div>
