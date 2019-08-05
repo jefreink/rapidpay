@@ -5,8 +5,15 @@
     <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/intro.jpg" alt="Rapidpay es una demo técnica que simula un sistema de pago y transferencias internacionales.">
   </a>
 </div>
-  <br>
+  <br> 
 <div align="center">
     <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/2.jpg" alt="intro">
 </div>
-  
+    <br>  
+<div align="center">
+    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/3.jpg" alt="intro">
+</div>
+  <br> 
+<div align="center">
+    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/4.jpg" alt="intro">
+</div>
