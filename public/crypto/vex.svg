@@ -1,0 +1,26 @@
+<svg id="vex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.898 29.896">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #312b2f;
+      }
+
+      .cls-2 {
+        fill: #eeefef;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.041" x2="0.5" y2="-0.078" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#545559"/>
+      <stop offset="1" stop-color="#9b9fa3"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_2934" data-name="Path 2934" class="cls-1" d="M14.949,29.9A14.948,14.948,0,1,1,29.9,14.949,14.966,14.966,0,0,1,14.949,29.9"/>
+  <g id="Group_1343" data-name="Group 1343">
+    <path id="Shape_3_" class="cls-2" d="M14.928,23.336,9.184,10.448,8.519,9.291a2.2,2.2,0,0,0-.355-.441,1.492,1.492,0,0,0-.974-.3V7.819h8.466a3.483,3.483,0,0,0-1.039,1.346,3.161,3.161,0,0,0-.242,1.328,4.86,4.86,0,0,0,.473,1.452c.5,1.227,1.41,3.2,1.712,3.961l.826,1.83Z"/>
+    <path id="Shape_2_" class="cls-3" d="M18,16.464l-2.157-4.83-.383-.852s-.695-2.5,2.287-2.963h4.958V8.57s-1.015-.1-1.836,1.578Z"/>
+  </g>
+</svg>

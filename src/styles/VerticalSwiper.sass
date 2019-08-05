@@ -1,0 +1,28 @@
+@import 'mixins.sass'
+
+.box-slide
+    .swiper-slide
+        font-size: 1.2rem
+        font-family: Mont-Regular
+        @include phone-md
+            font-size: .8rem
+        @include phone-md
+            font-size: .65rem
+        &.swiper-slide-active
+            position: relative
+            color: #fff
+            font-size: 1.5rem
+            @include phone-md
+                font-size: 1rem
+            @include phone-md
+                font-size: .65rem
+
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                top: 0
+                height: 97%
+                width: 3px
+                background: #fff
+                box-shadow: 0 0 50px 5px #005aff

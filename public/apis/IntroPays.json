@@ -1,0 +1,6 @@
+[
+        {"title": "Proximamente", "img": "clock", "text": "En poco tiempo habilitaremos nuevas secciones para que tenga una mejor experiencia, desliza para mas detalles."},
+        {"title": "Pago facil", "img": "online", "text": "Ahora realizar pedidos y pagos online sera mas facil, con nuestro nuevo servicio podras pagar lo que quieras desde la comodidad de tu hogar"},
+        {"title": "Pago Movil", "img": "movil", "text": "Realiza tus operaciones desde donde te encuentres con tu telefono movil en pocos segundos"},
+        {"title": "Chat integrado", "img": "chat", "text": "Incluiremos un chat para que puedas estar en contacto facilmente con tu lista de contacto" }
+]

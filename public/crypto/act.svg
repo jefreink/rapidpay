@@ -1,0 +1,30 @@
+<svg id="act" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.898 29.898">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_2861" data-name="Path 2861" d="M0,14.949A14.949,14.949,0,1,0,14.949,0,14.966,14.966,0,0,0,0,14.949"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-19.214" y1="-13.463" x2="-19.212" y2="-13.463" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5d8aff"/>
+      <stop offset="1" stop-color="#5038fa"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1320" data-name="Group 1320">
+    <g id="Group_1319" data-name="Group 1319" class="cls-1">
+      <rect id="Rectangle_243" data-name="Rectangle 243" class="cls-2" width="29.897" height="29.897"/>
+    </g>
+  </g>
+  <path id="Path_2862" data-name="Path 2862" class="cls-3" d="M17.808,4.439h-5.7L4.238,18.3l2.734,4.881,15.953.007,2.734-4.89ZM9.761,18.288l5.184-8.9,5.175,8.9Z"/>
+</svg>

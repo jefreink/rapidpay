@@ -1,0 +1,326 @@
+@import 'mixins.sass'
+
+.resume
+    background: #0b1844
+    background: linear-gradient(to bottom, #000 3%, #0b1844 70%, #000 90%)
+    height: 100vh
+    overflow: hidden
+.box-svg
+  position: relative
+  transform: scale(1.2)
+  @include phone-md
+    transform: scale(1)
+  @include phone-xxs
+    transform: scale(.8)
+  
+  svg
+    animation: gradient 3s forwards
+  &.active-blue svg
+    animation: blue-g 1s 2s forwards
+  &.active-green svg
+    animation: green-g 1s 2s forwards
+  &.active-pink svg
+    animation: pink-g 1s 2s forwards
+  &.active-blue .circle
+    stroke: #226efa
+    transition-delay: 1s
+  &.active-green .circle
+    stroke: #00ff43
+    transition-delay: 1s
+  &.active-pink .circle
+    stroke: #e400ff
+    transition-delay: 1s
+  .circle
+    stroke-dasharray: 1000
+    stroke-dashoffset: 1000
+    stroke-dashoffset: -1000
+    stroke: #b0e2ff
+    stroke-width: 3
+    animation: stroke 2.7s 3s forwards
+    fill-opacity: 0
+  .circle2
+    stroke-dasharray: 1000
+    stroke-dashoffset: 1000
+    stroke-dashoffset: -1000
+    stroke: #e400ff
+    stroke-width: 3
+    fill-opacity: 0
+    transform: rotate(90deg)
+    transform-origin: 50% 50%
+  .circle3
+    stroke-dasharray: 1000
+    stroke-dashoffset: 1000
+    stroke-dashoffset: -1000
+    stroke: #00ff43
+    stroke-width: 3
+    fill-opacity: 0
+    transform: rotate(45deg)
+    transform-origin: 50% 50%
+  &.active-green .circle3
+    animation: stroke 3.6s forwards
+  &.active-pink
+    .circle2
+      animation: stroke 3.6s forwards
+    .circle
+      stroke: #b0e2ff
+  &.active-green .circle
+    stroke: #b0e2ff
+  .box-lights
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    transform: rotate(-134deg)
+    animation: lights 4s 3s forwards
+  .box-text
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    font-family: Mont-SemiBold
+    transform: rotate(145deg)
+    opacity: 0
+    animation: showText 1s 7s forwards
+    .account-text
+      transform: rotate(-88deg)
+      position: absolute
+      top: 126px
+      right: -25px
+      font-size: 0.7rem
+      font-weight: bold
+      color: #fff
+      height: 40px
+      padding-top: 20px
+    .recharge-text
+      transform: rotate(-146deg)
+      position: absolute
+      top: 3px
+      right: 36px
+      font-size: 0.7rem
+      font-weight: bold
+      height: 40px
+      color: #fff
+      padding-top: 20px
+    .deposit-text
+      transform: rotate(-194deg)
+      position: absolute
+      top: -22px
+      right: 158px
+      font-size: 0.7rem
+      font-weight: bold
+      color: #fff
+      height: 40px
+      padding-top: 20px
+  .box-lights .text
+    opacity: 0
+    animation: showText 1s 6.5s forwards
+  .blue-circle
+    width: 100%
+    height: 100%
+    background: transparent
+    position: absolute
+    left: 0
+    top: 0
+    border-radius: 50%
+    transform: rotate(0deg)
+    opacity: 0
+    &::before
+      content: ""
+      position: absolute
+      top: 130px
+      right: 4px
+      width: 4px
+      height: 30px
+      border-radius: 60px
+      background: #fff
+      box-shadow: 0 0 10px 4px #7bd4ff
+  .account-circle
+    width: 100%
+    height: 100%
+    background: transparent
+    position: absolute
+    left: 0
+    top: 0
+    border-radius: 50%
+    opacity: 0
+    animation: firstLight 1s 3s forwards
+    transform: rotate(145deg)
+  &.active-blue .account-circle
+    animation: blueLight 3s forwards
+  .account-circle::before
+    content: ""
+    position: absolute
+    top: 130px
+    right: 4px
+    width: 4px
+    height: 30px
+    border-radius: 60px
+    background: #fff
+    box-shadow: 0 0 10px 4px #008bd1
+  .recharge-circle
+    width: 100%
+    height: 100%
+    background: transparent
+    position: absolute
+    left: 0
+    top: 0
+    border-radius: 50%
+    opacity: 0
+    animation: mini 2s 4s forwards
+    transform: rotate(92deg)
+  &.active-pink .recharge-circle
+    animation: pinkLight 3s forwards
+  .recharge-circle::before
+    content: ""
+    position: absolute
+    top: 130px
+    right: 4px
+    width: 4px
+    height: 30px
+    border-radius: 60px
+    background: #fff
+    box-shadow: 0 0 10px 4px #e400ff
+  .deposit-circle
+    width: 100%
+    height: 100%
+    background: transparent
+    position: absolute
+    left: 0
+    top: 0
+    border-radius: 50%
+    transform: rotate(45deg)
+    opacity: 0
+    animation: mini 2s 4s forwards
+  &.active-green .deposit-circle
+    animation: greenLight 3s forwards
+  .deposit-circle::before
+    content: ""
+    position: absolute
+    top: 130px
+    right: 4px
+    width: 4px
+    height: 30px
+    border-radius: 60px
+    background: #fff
+    box-shadow: 0 0 10px 4px #00ff43
+    transform: rotate(-4deg)
+  .box-account
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    padding: 1rem
+    .account
+      font-family: Mont-SemiBold
+      color: #777
+      font-size: 0.8rem
+      margin-bottom: 1rem
+      opacity: 0
+      animation: showTextInner 1s 6.5s forwards
+    .amount
+      font-family: Mont-Regular
+      color: #fff
+      opacity: 0
+      animation: showTextInner 1s 6.5s forwards
+      .number
+        font-size: 30px
+      .coin
+        font-size: 1rem
+        text-transform: uppercase
+
+@include keyframes(stroke)
+  to
+    stroke-dashoffset: -2000
+
+@include keyframes(mini)
+  from
+    opacity: 0
+  to
+    opacity: 1 
+
+@include keyframes(gradient)
+  to
+    filter: blur(1px) drop-shadow(0 0 5px #226efa) drop-shadow(0px 0 10px #226efa)
+
+@include keyframes(blue-g)
+  to
+    filter: blur(1px) drop-shadow(0 0 5px #226efa) drop-shadow(0 0 200px #226efa)
+
+@include keyframes(pink-g)
+  to
+    filter: blur(1px) drop-shadow(0 0 5px #e400ff) drop-shadow(0 0 200px #e400ff)
+
+@include keyframes(green-g) 
+  from 
+    filter: blur(1px) drop-shadow(0 0 5px #226efa) drop-shadow(0px 0 10px #226efa)
+  
+  to 
+    filter: blur(1px) drop-shadow(0 0 5px #00ff43) drop-shadow(0 0 200px #00ff43)
+
+@include keyframes(lights) 
+  to 
+    opacity: 1
+    transform: rotate(360deg)
+  
+  from 
+    opacity: 1
+    transform: rotate(-134deg)
+  
+
+@include keyframes(firstLight) 
+  to 
+    opacity: 1
+  
+  from 
+    opacity: 1
+  
+@include keyframes(showTextInner) 
+  to 
+    opacity: 1
+    transform: scale(1)
+  
+  from 
+    opacity: 0
+    transform: scale(0)
+
+@include keyframes(showText) 
+  to 
+    opacity: 1
+    margin-top: 0px
+  
+  from 
+    opacity: 0
+    margin-right: 30px
+  
+
+@include keyframes(blueLight) 
+  from 
+    transform: rotate(145deg)
+    opacity: 1
+  
+  to 
+    transform: rotate(505deg)
+    opacity: 1
+  
+
+@include keyframes(greenLight) 
+  from 
+    transform: rotate(45deg)
+    opacity: 1
+  
+  to 
+    transform: rotate(405deg)
+    opacity: 1
+  
+
+@include keyframes(pinkLight) 
+  from 
+    transform: rotate(92deg)
+    opacity: 1
+  
+  to 
+    transform: rotate(452deg)
+    opacity: 1

@@ -1,0 +1,195 @@
+@import 'mixins.sass'
+
+.recharge
+    padding-top: 3rem
+    padding-bottom: 1rem
+    &.showLoad
+        padding-top: 0
+        padding-bottom: 0
+    .box-cards
+        min-height: 30vh
+        position: relative
+        background: #010101
+        margin-bottom: 1rem
+        background: linear-gradient(to bottom, #000 5%, #0b1844 45%, #01020d 78%)
+        @include phone-xs
+            min-height: 25vh
+        &.showLoad
+            opacity: 0
+    .box-amount
+        padding: 1rem
+        &.showLoad
+            opacity: 0
+        .enter
+            text-align: left
+            font-family: Mont-SemiBold
+            color: #fff
+            font-size: 15px
+            margin-bottom: .5rem
+        .form-control
+            background: transparent
+            border: none
+            border-radius: 0
+            text-align: center
+            color: #fff
+            font-family: Mont-SemiBold
+            font-size: 1.5rem
+            box-shadow: none !important
+            @include phone-sm
+                font-size: 1rem
+            
+        .coin
+            position: relative
+            padding: .5rem
+            height: 40px
+            font-family: Mont-Regular
+            background: #00010c
+            border-radius: 6px
+            color: #ccc
+            margin-bottom: 1rem
+            box-shadow: 0 0.5rem 2rem #000
+            &::before
+                content: ""
+                position: absolute
+                right: -10px
+                top: 50%
+                margin-top: -10px
+                border-top: 10px solid transparent
+                border-bottom: 10px solid transparent
+                border-left: 10px solid #00010c
+        .resume
+            color: #ccc
+            font-size: 2rem
+            @include phone-blgm
+                font-size: 1rem
+            @include phone-xs
+                font-size: .8rem
+            .texto
+                font-family: Mont-SemiBold
+            .postText
+                font-family: Mont-Regular
+    .box-recharge
+        .btn
+            position: relative
+            background: #000
+            box-shadow: 0 0 50px 5px #0066a9
+            padding: 1rem
+            color: #fff
+            text-align: left
+            font-size: 2rem
+            @include phone-blgm
+                font-size: 1rem
+            font-family: Mont-Regular
+            transition: all ease .3s
+            &:disabled
+                color: #555
+                box-shadow: 0 0 50px 5px #031a29
+                .arrow
+                    filter: inherit
+                    color: #555
+                    transition: all ease 1s
+            .arrow
+                color: #fff 
+                top: 10px
+                font-size: 3rem
+                @include phone-blgm
+                    font-size: 2rem
+                position: absolute
+                right: 5px
+                filter: drop-shadow(0 0 5px #226efa) drop-shadow(0 0 1px #226efa)
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button 
+        -webkit-appearance: none 
+        margin: 0 
+    .resp
+        float: right
+        width: 50px
+        height: 50px
+        .svg-success
+            float: right
+            height: 50px
+            stroke-width: 2px
+            stroke: #8EC343
+            fill: none
+            & path
+                stroke-dasharray: 17px, 17px
+                stroke-dashoffset: 0px
+                -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards
+                animation: checkmark 0.25s ease-in-out 0.7s backwards
+
+            & circle
+                stroke-dasharray: 76px, 76px
+                stroke-dashoffset: 0px
+                transform: rotate(-90deg)
+                transform-origin: 50% 50%
+                -webkit-animation: checkmark-circle 0.6s ease-in-out forwards
+                animation: checkmark-circle 0.6s ease-in-out forwards
+        .svg-error
+            float: right
+            height: 50px
+            #Oval2
+                stroke: rgba(252, 191, 191, .5)
+                stroke-width: 4
+            .ui-error
+                width: 100px
+                height: 100px
+                margin: 40px
+            .ui-error-circle
+                stroke: #F74444
+                stroke-width: 4
+                stroke-dasharray: 260.75219025px, 260.75219025px
+                stroke-dashoffset: 260.75219025px
+                animation: ani-error-circle 1.2s linear
+
+            .ui-error-line1
+                stroke: #F74444
+                stroke-width: 3
+                stroke-dasharray: 54px 55px
+                stroke-dashoffset: 55px
+                stroke-linecap: round
+                animation: ani-error-line 0.15s 1.2s linear both
+
+            .ui-error-line2
+                stroke: #F74444
+                stroke-width: 3
+                stroke-dasharray: 54px 55px
+                stroke-dashoffset: 55px
+                stroke-linecap: round
+                animation: ani-error-line 0.2s 0.9s linear both
+
+@keyframes ani-error-line
+  to
+    stroke-dashoffset: 0
+
+@keyframes ani-error-circle
+  0%
+    stroke-dasharray: 0, 260.75219025px
+    stroke-dashoffset: 0
+
+  35%
+    stroke-dasharray: 120px, 120px
+    stroke-dashoffset: -120px
+
+  70%
+    stroke-dasharray: 0, 260.75219025px
+    stroke-dashoffset: -260.75219025px
+
+  100%
+    stroke-dasharray: 260.75219025px, 0
+    stroke-dashoffset: -260.75219025px
+
+
+@keyframes checkmark
+  0%
+    stroke-dashoffset: 17px
+
+  100%
+    stroke-dashoffset: 0
+
+@keyframes checkmark-circle
+  0%
+    stroke-dashoffset: 76px
+
+  100%
+    stroke-dashoffset: 0px

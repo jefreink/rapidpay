@@ -1,0 +1,104 @@
+.modal
+  .modal-dialog
+    .modal-content
+      border-radius: 0
+      background: #01040e
+      color: #fff
+      font-weight: bold
+      .modal-header
+        border: none !important
+        font-weight: bold
+        .modal-title
+          font-weight: bold
+        .close
+          color: #53b883
+          text-shadow: none
+          outline: none
+      .custom
+      
+          position: relative
+          input[type=checkbox]
+            display: block
+          &::before
+            height: 15px
+            width: 15px
+            background-color: #000
+            margin-top: 10px
+            position: absolute
+            content: ''
+          input[type=checkbox]:checked
+                line-height: 1.5em
+                content: ''
+                display: inline-block
+                width: 18px
+                height: 18px
+                margin-top: -4px
+                margin-left: -4px
+                border: 1px solid rgb(192,192,192)
+                border-radius: 0.25em
+                background: rgb(224,224,224)
+      .form-group
+        label
+          margin-bottom: 0
+          padding-top: 1rem
+        .text-danger
+          position: absolute
+      .btn 
+        color: #53b883
+        outline: none
+        box-shadow: none
+        font-weight: bold
+label.custom
+  cursor: pointer
+  font-size: 1rem
+  line-height: 1rem
+
+input
+  &[type="checkbox"]
+    border: 0
+    clip: rect(0 0 0 0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+  &[type="checkbox"] + label
+    position: relative
+    padding: 0.5rem 0 0 2rem
+    margin-bottom: 1rem
+    user-select: none
+    color: #fff
+  &[type="checkbox"] + label:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    height: 15px
+    width: 15px
+    background-color: #000
+    transition: background 200ms ease-out
+  &[type="checkbox"] + label:after
+    content: ""
+    position: absolute
+    transform: scale(0)
+    transition: transform 200ms ease-out
+  &[type="checkbox"]
+    + label:after
+      background-color: transparent
+      content: ""
+      display: block
+      position: absolute
+      left: 5px
+      top: 10px
+      width: 5px
+      height: 14px
+      opacity: 0
+      border-bottom: 2px solid #53b883
+      border-right: 2px solid #53b883
+      transform: rotate(45deg)
+      transition: border-color 0.3s ease
+    &:checked + label
+      &:after
+        content: ""
+        opacity: 1

@@ -1,0 +1,20 @@
+<svg id="cop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.167 34.865">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3d601;
+      }
+
+      .cls-2 {
+        fill: #00386d;
+      }
+
+      .cls-3 {
+        fill: #c33c18;
+      }
+    </style>
+  </defs>
+  <path id="Path_3216" data-name="Path 3216" class="cls-1" d="M35.026,15.242a17.584,17.584,0,0,0-34.884,0H35.026Z"/>
+  <path id="Path_3217" data-name="Path 3217" class="cls-2" d="M.142,15.242a17.585,17.585,0,0,0,34.509,6.376,17.249,17.249,0,0,0,.376-6.376H.142Z"/>
+  <path id="Path_3218" data-name="Path 3218" class="cls-3" d="M1.79,25.053a17.633,17.633,0,0,0,31.607,0Z"/>
+</svg>

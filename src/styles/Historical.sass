@@ -1,0 +1,94 @@
+@import 'mixins.sass'
+
+@mixin positionLeft($from, $to, $dist, $dir)
+  @for $i from $from to $to
+    &:nth-child(#{$i})
+      &.active
+        ~
+          .indicator
+            #{$dir}: ($dist * ($i - 1) + $from) + px
+
+.historical
+    background: #0b1844
+    background: linear-gradient(to bottom, #0b1844 -40%, #000 40%, #000 70%, #0b1844)
+    height: 100vh
+    padding-top: 3rem
+    overflow-y: hidden
+
+.box-date
+    position: absolute
+    bottom: 40px
+    width: 100%
+    margin: 0 auto
+    .circulo
+        height: 100px
+        width: 100px
+        margin: 0 auto
+        padding: 15px 10px
+        border-radius: 50%
+        border: 2px solid rgb(176, 226, 255)
+        box-shadow: 0 0 50px 10px #005aff inset
+        color: #fff
+        position: relative
+        transition: all ease 0.5s
+
+        &::before
+            content: ""
+            position: absolute
+            left: -3px
+            top: -2px
+            height: 100px
+            width: 100px
+            border-radius: 50%
+            box-shadow: 0 0 50px 5px #005aff
+
+        &::after
+            content: ""
+            position: absolute
+            left: 42px
+            top: -2px
+            height: 4px
+            width: 15px
+            border-radius: 30%
+            background: #fff
+            box-shadow: 0 0 10px 4px #7bd4ff
+
+        .day
+            font-size: 2rem
+
+        .mounth
+            font-size: 1.2rem
+            margin-top: -10px
+        .box-inner
+            transition: all ease .5s
+
+.box-tabs
+    font-family: Mont-SemiBold
+    box-shadow: 0 .5rem 1rem #000
+    padding-bottom: .5rem
+    position: relative
+    @include phone-xs
+        font-size: 0.65rem
+    .col-4
+        &.active
+            color: #fff
+        &:nth-child(1)
+            &.active
+                ~ .selector
+                    left: 0            
+        &:nth-child(2)
+            &.active
+                ~ .selector
+                    left: 33%            
+        &:nth-child(3)
+            &.active
+                ~ .selector
+                    left: 66%            
+    .selector
+        width: 33%
+        height: 3px
+        background: #ffffff
+        position: absolute
+        bottom: -8px
+        transition: all ease .3s
+

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Vue",
+        "img": "tecnologias/vue.png",
+        "animation": "fadeInLeftBig"
+    },
+    {
+        "name": "Bootstrap",
+        "img": "tecnologias/bootstrap.svg",
+        "animation": "fadeInDownBig"
+    },
+    {
+        "name": "Firebase",
+        "img": "tecnologias/firebase.svg",
+        "animation": "fadeInRightBig"
+    },
+    {
+        "name": "Sass",
+        "img": "tecnologias/sass.png",
+        "animation": "fadeInLeftBig"
+    },
+    {
+        "name": "Rxjs",
+        "img": "tecnologias/rxjs.svg",
+        "animation": "fadeInUpBig"
+    },
+    {
+        "name": "Linux",
+        "img": "tecnologias/linux.svg",
+        "animation": "fadeInRightBig"
+    }
+]

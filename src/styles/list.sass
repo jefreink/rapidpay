@@ -1,0 +1,190 @@
+@import 'mixins.sass'
+
+.lista
+    background: #000
+    min-height: 100vh
+    padding-top: 3rem
+    padding-bottom: 2rem
+    .title
+      color: #fff
+      font-family: Mont-Bold
+      text-align: left
+      @include phone-sm
+        font-size: .8rem
+      @include phone-sxs
+        font-size: .65rem
+.amounts
+    min-height: 30vh
+    position: relative
+    background: #010101
+    margin-bottom: 1rem
+    background: linear-gradient(to bottom, #000 5%, #0b1844 45%, #01020d 78%, #000)
+    @include phone-sm
+      min-height: 20vh
+    .centrar-list
+      min-height: 30vh
+      @include phone-sm
+        min-height: 20vh
+      .active
+          font-size: 2.5rem
+          color: #fff
+          transform: translateY(-20px)
+          &::before
+              content: ''
+              height: 3px
+              width: 100%
+              position: absolute
+              left: 0
+              bottom: 0
+              background: rgb(176, 226, 255)
+              box-shadow: 0 0 20px 3px rgb(0, 90, 255)
+.list-content
+  z-index: 1000
+  position: relative
+  @include phone-sm
+    max-width: inherit
+
+  .box-cards
+      height: 40vh
+      overflow-y: auto
+      overflow-x: hidden
+      margin-bottom: 1rem
+      @include phone-blg
+        height: 30vh
+      @include phone-blgm
+        height: 25vh
+      .empty
+        height: 20vh  
+      .media
+        background: #0e223c
+        margin-bottom: 1rem
+        border: 0
+        font-family: Mont-SemiBold
+        position: relative
+        &::before, &::after
+          box-sizing: inherit
+          content: ''
+          position: absolute
+          width: 100%
+          height: 100%
+        &.draw
+          &::before, &::after
+            border: 2px solid transparent
+            width: 0
+            height: 0
+          &::before
+            top: 0
+            left: 0
+          &::after
+            bottom: 0
+            right: 0
+        &.active
+          color: #60daaa
+          &::before, &::after
+            width: 100%
+            height: 100%
+          &::before
+            border-top-color: #489ece
+            border-right-color: #489ece
+            box-shadow: inset 0px 0px 10px 0px #0e7176
+            transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+          &::after
+            border-bottom-color: #489ece
+            border-left-color: #489ece
+            transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+        .media-body
+          @include phone-sm
+            font-size: .8rem
+            padding: .2rem 0
+          p
+            color: #fff
+  .box-search
+      position: relative
+      height: 40px
+      max-width: 330px
+      margin: -7vh auto 0
+      label
+          &::before
+              content: ''
+              position: absolute
+              width: 100%
+              height: 3px
+              bottom: 0
+              left: 0
+              background: rgb(176, 226, 255)
+              box-shadow: 0 0 20px 3px rgb(0, 90, 255)
+              transform: scale(0)
+              transition: all ease .3s
+.form-control
+    background: transparent
+    color: #fff
+    font-family: Mont-Regular
+    border: none
+    outline: none !important
+    box-shadow: none !important
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 3px
+        bottom: 0
+        left: 0
+        background: #fff
+        
+    &:focus + label, &:active + label
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                transform: scale(1)
+label
+  font-family: Mont-Regular
+textarea
+    resize: none
+    height: 40px
+
+.btn
+    position: relative
+    box-shadow: 0 0 50px 5px #0066a9
+    padding: 1rem
+    color: #fff
+    text-align: left
+    max-width: 330px
+    font-family: Mont-Regular
+    transition: all ease .3s
+    &:disabled
+        color: #555
+        box-shadow: 0 0 50px 5px #031a29
+        .arrow
+          filter: inherit
+          color: #555
+          transition: all ease 1s
+    .arrow
+      color: #fff 
+      top: 10px
+      font-size: 2rem
+      position: absolute
+      right: 5px
+      filter: drop-shadow(0 0 5px #226efa) drop-shadow(0 0 1px #226efa)
+.swiper-slide
+    font-size: 2rem
+    height: 70px
+    @include phone-sm
+      font-size: 1.5rem
+    &.swiper-slide-active
+        position: relative
+        color: #fff
+        font-size: 3rem
+        margin-top: -11px
+        @include phone-sm
+          font-size: 2rem
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 3px
+            width: 100%
+            background: #b0e2ff
+            box-shadow: 0 0 12px 5px #005aff
