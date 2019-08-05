@@ -22,6 +22,7 @@
   <br>
   <br>
   <br>
+  <br>
 <div align="center">
     <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/4.jpg" alt="4">
 </div>
