@@ -24,7 +24,7 @@
   <br>
   <br>
 <div align="center">
-    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/4.jpg" alt="4">
+    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/44.jpg" alt="4">
 </div>
 
 <br>
