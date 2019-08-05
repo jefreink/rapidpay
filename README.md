@@ -11,7 +11,7 @@
    <br>
   <br>
 <div align="center">
-    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/2.jpg" alt="2">
+    <img src="https://github.com/jefreinko/rapidpay/blob/develop/public/tutorial/22.jpg" alt="2">
 </div>
     <br>
     <br>
