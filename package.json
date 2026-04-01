@@ -24,7 +24,7 @@
     "rxjs-compat": "^6.5.2",
     "velocity-animate": "^1.5.2",
     "velocity-vue": "^1.1.1",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-awesome-swiper": "^3.1.3",
     "vue-material-design-icons": "^3.3.1",
     "vue-material-icon": "^1.0.1",
